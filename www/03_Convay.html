@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <script type="text/javascript" src="scripts/conway.js"></script>
+        <style type="text/css">
+body {
+    background-color: antiquewhite;
+}
+.example {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align:center;
+}
+#exampleCanvas {
+    zoom: 100%;
+    /* IE, only works on <img> tags */
+    -ms-interpolation-mode: nearest-neighbor;
+    /* Firefox */
+    image-rendering: crisp-edges;
+    /* Chromium + Safari */
+    image-rendering: pixelated;
+}
+        </style>
+    </head>
+    <body style="margin:0; padding:0;">
+        <div id="example" class="example">
+            <h1>Wire World!</h1>
+            <canvas id="exampleCanvas" width="512" height="512"></canvas>
+        </div>
+        <script>
+            main(window.document.getElementById("exampleCanvas"));
+        </script>
+    </body>
+</html>

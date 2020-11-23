@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script type="text/javascript" src="scripts/hello.js"></script>
+        <style type="text/css">
+body {
+    background-color: antiquewhite;
+}
+.example {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align:center;
+}
+        </style>
+    </head>
+    <body style="margin:0; padding:0;">
+        <div id="example" class="example">
+            <h1>Hello World!</h1>
+            <canvas id="exampleCanvas"></canvas>
+            <div id="exampleLog"></div>    
+        </div>
+        <script>
+            main(window.document.getElementById("exampleCanvas"));
+        </script>
+    </body>
+</html>
